@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct RustExamplesApp: App {
+    private let dependencies = Dependencies()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
-        }
+            ListView(vm: ListViewModel(repository: dependencies.repository))
+        }.environmentObject(dependencies)
     }
 }

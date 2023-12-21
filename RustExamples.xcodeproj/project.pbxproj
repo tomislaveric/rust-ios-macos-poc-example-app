@@ -3,23 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		E6F0CD162B330473004DDFCD /* RustExamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F0CD152B330473004DDFCD /* RustExamplesApp.swift */; };
-		E6F0CD182B330473004DDFCD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F0CD172B330473004DDFCD /* ContentView.swift */; };
 		E6F0CD1A2B330473004DDFCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6F0CD192B330473004DDFCD /* Assets.xcassets */; };
 		E6F0CD1E2B330473004DDFCD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6F0CD1D2B330473004DDFCD /* Preview Assets.xcassets */; };
+		E6F0CD2B2B3424F3004DDFCD /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F0CD2A2B3424F3004DDFCD /* ListViewModel.swift */; };
+		E6F0CD2D2B342596004DDFCD /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F0CD2C2B342596004DDFCD /* ListView.swift */; };
+		E6F0CD312B34267D004DDFCD /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F0CD302B34267D004DDFCD /* DetailView.swift */; };
+		E6F0CD332B342684004DDFCD /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F0CD322B342684004DDFCD /* DetailViewModel.swift */; };
+		E6F0CD362B342F6C004DDFCD /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F0CD352B342F6C004DDFCD /* Character.swift */; };
+		E6F0CD382B344B04004DDFCD /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F0CD372B344B04004DDFCD /* Dependencies.swift */; };
+		E6F0CD3B2B346DEE004DDFCD /* RustMultiPlatform in Frameworks */ = {isa = PBXBuildFile; productRef = E6F0CD3A2B346DEE004DDFCD /* RustMultiPlatform */; };
+		E6F0CD3E2B346FC8004DDFCD /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F0CD3D2B346FC8004DDFCD /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E6F0CD122B330473004DDFCD /* RustExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RustExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F0CD152B330473004DDFCD /* RustExamplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustExamplesApp.swift; sourceTree = "<group>"; };
-		E6F0CD172B330473004DDFCD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E6F0CD192B330473004DDFCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6F0CD1B2B330473004DDFCD /* RustExamples.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RustExamples.entitlements; sourceTree = "<group>"; };
 		E6F0CD1D2B330473004DDFCD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E6F0CD2A2B3424F3004DDFCD /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		E6F0CD2C2B342596004DDFCD /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		E6F0CD302B34267D004DDFCD /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		E6F0CD322B342684004DDFCD /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		E6F0CD352B342F6C004DDFCD /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		E6F0CD372B344B04004DDFCD /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		E6F0CD3D2B346FC8004DDFCD /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6F0CD3B2B346DEE004DDFCD /* RustMultiPlatform in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,11 +66,15 @@
 		E6F0CD142B330473004DDFCD /* RustExamples */ = {
 			isa = PBXGroup;
 			children = (
+				E6F0CD3C2B346EE9004DDFCD /* Services */,
+				E6F0CD342B342F5F004DDFCD /* Models */,
+				E6F0CD2F2B342671004DDFCD /* DetailView */,
+				E6F0CD2E2B342663004DDFCD /* ListView */,
 				E6F0CD152B330473004DDFCD /* RustExamplesApp.swift */,
-				E6F0CD172B330473004DDFCD /* ContentView.swift */,
 				E6F0CD192B330473004DDFCD /* Assets.xcassets */,
 				E6F0CD1B2B330473004DDFCD /* RustExamples.entitlements */,
 				E6F0CD1C2B330473004DDFCD /* Preview Content */,
+				E6F0CD372B344B04004DDFCD /* Dependencies.swift */,
 			);
 			path = RustExamples;
 			sourceTree = "<group>";
@@ -67,6 +85,40 @@
 				E6F0CD1D2B330473004DDFCD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E6F0CD2E2B342663004DDFCD /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				E6F0CD2A2B3424F3004DDFCD /* ListViewModel.swift */,
+				E6F0CD2C2B342596004DDFCD /* ListView.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		E6F0CD2F2B342671004DDFCD /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				E6F0CD302B34267D004DDFCD /* DetailView.swift */,
+				E6F0CD322B342684004DDFCD /* DetailViewModel.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		E6F0CD342B342F5F004DDFCD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E6F0CD352B342F6C004DDFCD /* Character.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E6F0CD3C2B346EE9004DDFCD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E6F0CD3D2B346FC8004DDFCD /* Repository.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +137,9 @@
 			dependencies = (
 			);
 			name = RustExamples;
+			packageProductDependencies = (
+				E6F0CD3A2B346DEE004DDFCD /* RustMultiPlatform */,
+			);
 			productName = RustExamples;
 			productReference = E6F0CD122B330473004DDFCD /* RustExamples.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +168,9 @@
 				Base,
 			);
 			mainGroup = E6F0CD092B330472004DDFCD;
+			packageReferences = (
+				E6F0CD392B346DEE004DDFCD /* XCLocalSwiftPackageReference "../rust-multi-platform/RustMultiPlatform" */,
+			);
 			productRefGroup = E6F0CD132B330473004DDFCD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +197,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6F0CD182B330473004DDFCD /* ContentView.swift in Sources */,
+				E6F0CD382B344B04004DDFCD /* Dependencies.swift in Sources */,
+				E6F0CD2D2B342596004DDFCD /* ListView.swift in Sources */,
+				E6F0CD332B342684004DDFCD /* DetailViewModel.swift in Sources */,
+				E6F0CD3E2B346FC8004DDFCD /* Repository.swift in Sources */,
+				E6F0CD362B342F6C004DDFCD /* Character.swift in Sources */,
 				E6F0CD162B330473004DDFCD /* RustExamplesApp.swift in Sources */,
+				E6F0CD312B34267D004DDFCD /* DetailView.swift in Sources */,
+				E6F0CD2B2B3424F3004DDFCD /* ListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +423,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		E6F0CD392B346DEE004DDFCD /* XCLocalSwiftPackageReference "../rust-multi-platform/RustMultiPlatform" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../rust-multi-platform/RustMultiPlatform";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E6F0CD3A2B346DEE004DDFCD /* RustMultiPlatform */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RustMultiPlatform;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E6F0CD0A2B330472004DDFCD /* Project object */;
 }
