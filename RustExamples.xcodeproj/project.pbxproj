@@ -16,8 +16,8 @@
 		E6F0CD332B342684004DDFCD /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F0CD322B342684004DDFCD /* DetailViewModel.swift */; };
 		E6F0CD362B342F6C004DDFCD /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F0CD352B342F6C004DDFCD /* Character.swift */; };
 		E6F0CD382B344B04004DDFCD /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F0CD372B344B04004DDFCD /* Dependencies.swift */; };
-		E6F0CD3B2B346DEE004DDFCD /* RustMultiPlatform in Frameworks */ = {isa = PBXBuildFile; productRef = E6F0CD3A2B346DEE004DDFCD /* RustMultiPlatform */; };
 		E6F0CD3E2B346FC8004DDFCD /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F0CD3D2B346FC8004DDFCD /* Repository.swift */; };
+		E6F0CD412B34B440004DDFCD /* RustMultiPlatformUniffi in Frameworks */ = {isa = PBXBuildFile; productRef = E6F0CD402B34B440004DDFCD /* RustMultiPlatformUniffi */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6F0CD3B2B346DEE004DDFCD /* RustMultiPlatform in Frameworks */,
+				E6F0CD412B34B440004DDFCD /* RustMultiPlatformUniffi in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +138,7 @@
 			);
 			name = RustExamples;
 			packageProductDependencies = (
-				E6F0CD3A2B346DEE004DDFCD /* RustMultiPlatform */,
+				E6F0CD402B34B440004DDFCD /* RustMultiPlatformUniffi */,
 			);
 			productName = RustExamples;
 			productReference = E6F0CD122B330473004DDFCD /* RustExamples.app */;
@@ -169,7 +169,7 @@
 			);
 			mainGroup = E6F0CD092B330472004DDFCD;
 			packageReferences = (
-				E6F0CD392B346DEE004DDFCD /* XCLocalSwiftPackageReference "../rust-multi-platform/RustMultiPlatform" */,
+				E6F0CD3F2B34B440004DDFCD /* XCLocalSwiftPackageReference "../rust-multi-platform-uniffi-lib/RustMultiPlatformUniffi" */,
 			);
 			productRefGroup = E6F0CD132B330473004DDFCD /* Products */;
 			projectDirPath = "";
@@ -425,16 +425,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		E6F0CD392B346DEE004DDFCD /* XCLocalSwiftPackageReference "../rust-multi-platform/RustMultiPlatform" */ = {
+		E6F0CD3F2B34B440004DDFCD /* XCLocalSwiftPackageReference "../rust-multi-platform-uniffi-lib/RustMultiPlatformUniffi" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = "../rust-multi-platform/RustMultiPlatform";
+			relativePath = "../rust-multi-platform-uniffi-lib/RustMultiPlatformUniffi";
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E6F0CD3A2B346DEE004DDFCD /* RustMultiPlatform */ = {
+		E6F0CD402B34B440004DDFCD /* RustMultiPlatformUniffi */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = RustMultiPlatform;
+			productName = RustMultiPlatformUniffi;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import RustMultiPlatform
+import RustMultiPlatformUniffi
 
 protocol Repository {
     func getCharacter(id: Int) async throws -> Character
@@ -14,7 +14,7 @@ protocol Repository {
 }
 
 public struct RepositoryImpl: Repository {
-    private let repo = RustMultiPlatform.Repository()
+    private let repo = RustMultiPlatformUniffi.Repository()
     
     public func getCharacter(id: Int) async throws -> Character {
         try await repo.getCharacter(id: UInt8(id)).toModel()
@@ -26,7 +26,7 @@ public struct RepositoryImpl: Repository {
     }
 }
 
-extension RustMultiPlatform.Character {
+extension RustMultiPlatformUniffi.Character {
     func toModel() -> Character {
         Character(
             id: Int(self.id()),
